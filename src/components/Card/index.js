@@ -1,5 +1,7 @@
 import React from "react";
+import ViewBtn from "../ViewBtn";
 import "./style.css";
+import DeleteBtn from "../DeleteBtn";
 
 function Card() {
   return (
@@ -7,12 +9,8 @@ function Card() {
       <div className="card-body">
         <div className="row">
           <h5 className="card-title booktitle">Book Title</h5>
-          <button type="button" className="btn btn-primary cardBtn">
-            View
-          </button>
-          <button type="button" className="btn btn-danger cardBtn">
-            Delete
-          </button>
+          <ViewBtn />
+          <DeleteBtn />
         </div>
         <div className="row">
           <p className="text-muted subtitle">Subtitle</p>

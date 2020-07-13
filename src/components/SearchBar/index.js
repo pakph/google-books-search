@@ -8,9 +8,7 @@ function Search() {
         <p className="lead searchHeader">Book Search</p>
         <form>
           <div className="form-group">
-            <label className="searchLabel" htmlFor="search">
-              Book:
-            </label>
+            <label className="searchLabel" htmlFor="search"></label>
             <input
               name="search"
               type="text"

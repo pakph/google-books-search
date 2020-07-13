@@ -1,18 +1,9 @@
 .searchHeader {
-  position: relative;
-  left: -46%;
-  bottom: 30px;
-}
-
-.searchLabel {
-  position: relative;
-  left: -48.5%;
+  float: left;
 }
 
 .searchBtn {
-  position: relative;
-  right: -45%;
-  bottom: 15px;
+  float: right;
 }
 
 .searchContainer {

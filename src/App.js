@@ -4,7 +4,7 @@ import Saved from "./pages/Saved";
 import "./App.css";
 
 function App() {
-  return <Saved />;
+  return <Search />;
 }
 
 export default App;
