@@ -1,38 +1,31 @@
-.App {
+.jumbotronWrapper {
   text-align: center;
+  margin: 2% auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron {
+  display: inline-block;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchHeader {
+  position: relative;
+  left: -45%;
+  bottom: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchLabel {
+  position: relative;
+  left: -47.5%;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBtn {
+  position: relative;
+  right: -45%;
+  bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchContainer {
+  height: 225px;
+  padding: 42px 32px;
 }
