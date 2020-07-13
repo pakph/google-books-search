@@ -7,25 +7,3 @@
   display: inline-block;
   width: 90%;
 }
-
-.searchHeader {
-  position: relative;
-  left: -45%;
-  bottom: 0px;
-}
-
-.searchLabel {
-  position: relative;
-  left: -47.5%;
-}
-
-.searchBtn {
-  position: relative;
-  right: -45%;
-  bottom: 15px;
-}
-
-.searchContainer {
-  height: 225px;
-  padding: 42px 32px;
-}

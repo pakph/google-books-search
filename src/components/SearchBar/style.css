@@ -1,0 +1,21 @@
+.searchHeader {
+  position: relative;
+  left: -46%;
+  bottom: 30px;
+}
+
+.searchLabel {
+  position: relative;
+  left: -48.5%;
+}
+
+.searchBtn {
+  position: relative;
+  right: -45%;
+  bottom: 15px;
+}
+
+.searchContainer {
+  height: 225px;
+  padding: 42px 32px;
+}

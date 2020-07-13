@@ -2,15 +2,15 @@ import React from "react";
 import Card from "../Card";
 import "./style.css";
 
-function ResultsContainer() {
+function SavedContainer() {
   return (
     <div className="jumbotronWrapper">
-      <div className="jumbotron resultsContainer">
-        <p className="lead resultsHeader">Results</p>
+      <div className="jumbotron savedContainer">
+        <p className="lead savedHeader">Saved Books</p>
         <Card />
       </div>
     </div>
   );
 }
 
-export default ResultsContainer;
+export default SavedContainer;
