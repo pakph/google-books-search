@@ -1,10 +1,9 @@
 import React from "react";
-import Search from "./pages/Search";
-import Saved from "./pages/Saved";
+import Main from "./components/Main";
 import "./App.css";
 
 function App() {
-  return <Search />;
+  return <Main />;
 }
 
 export default App;
