@@ -19,6 +19,17 @@ function SavedContainer() {
       .catch((err) => console.log(err));
   }
 
+  function handleDelete(event) {
+    event.preventDefault();
+    console.log(books);
+    let savedBook = books.filter((book) => book._id === event.target.id);
+    savedBook = savedBook[0]._id;
+    console.log(savedBook);
+    API.deleteBook(savedBook)
+      .then(window.location.reload(false))
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div className="jumbotronWrapper">
       <div className="jumbotron savedContainer">
@@ -28,11 +39,13 @@ function SavedContainer() {
             {books.map((book) => (
               <SavedCard
                 key={book._id}
+                id={book._id}
                 title={book.title}
                 author={book.author}
                 description={book.description}
                 image={book.image}
                 href={book.link}
+                handleDelete={handleDelete}
               />
             ))}
           </>

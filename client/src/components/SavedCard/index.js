@@ -14,7 +14,7 @@ function SavedCard(props) {
               <a href={props.href} rel="noopener noreferrer" target="_blank">
                 <ViewBtn />
               </a>
-              <DeleteBtn />
+              <DeleteBtn id={props.id} handleDelete={props.handleDelete} />
             </div>
           </div>
         </div>
