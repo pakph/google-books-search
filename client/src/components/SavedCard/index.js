@@ -11,7 +11,9 @@ function SavedCard(props) {
           <div className="col">
             <h5 className="card-title booktitle">{props.title}</h5>
             <div className="float-right">
-              <ViewBtn />
+              <a href={props.href} rel="noopener noreferrer" target="_blank">
+                <ViewBtn />
+              </a>
               <DeleteBtn />
             </div>
           </div>
@@ -22,16 +24,12 @@ function SavedCard(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-3">
-            <img
-              className="card-img-top"
-              src="https://via.placeholder.com/128"
-              alt="Blank"
-            />
+          <div className="col-2">
+            <img className="card-img-top" src={props.image} alt="Blank" />
           </div>
-          <div className="col-9">
+          <div className="col-10">
             <div className="float-left">
-              <p className="card-text text-left">{props.synopsis}</p>
+              <p className="card-text text-left">{props.description}</p>
             </div>
           </div>
         </div>

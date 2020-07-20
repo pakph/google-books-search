@@ -12,7 +12,10 @@ function SavedContainer() {
 
   function loadBooks() {
     API.getBooks()
-      .then((res) => setBooks(res.data))
+      .then((res) => {
+        setBooks(res.data);
+        console.log(res.data);
+      })
       .catch((err) => console.log(err));
   }
 
@@ -27,7 +30,9 @@ function SavedContainer() {
                 key={book._id}
                 title={book.title}
                 author={book.author}
-                synopsis={book.synopsis}
+                description={book.description}
+                image={book.image}
+                href={book.link}
               />
             ))}
           </>
