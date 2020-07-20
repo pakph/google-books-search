@@ -1,7 +1,7 @@
 import React from "react";
 import ViewBtn from "../ViewBtn";
 import "./style.css";
-import DeleteBtn from "../DeleteBtn";
+import SaveBtn from "../SaveBtn";
 
 function Card(props) {
   return (
@@ -14,7 +14,7 @@ function Card(props) {
               <a href={props.href} rel="noopener noreferrer" target="_blank">
                 <ViewBtn />
               </a>
-              <DeleteBtn />
+              <SaveBtn id={props.id} handleSave={props.handleSave} />
             </div>
           </div>
         </div>

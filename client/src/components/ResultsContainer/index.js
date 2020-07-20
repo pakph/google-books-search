@@ -10,12 +10,14 @@ function ResultsContainer(props) {
           <>
             {props.data.map((book) => (
               <Card
+                id={book.id}
                 key={book.id}
                 title={book.volumeInfo.title}
                 author={book.volumeInfo.authors[0]}
-                description={book.searchInfo.textSnippet}
+                description={book.volumeInfo.description}
                 img={book.volumeInfo.imageLinks.thumbnail}
                 href={book.volumeInfo.previewLink}
+                handleSave={props.handleSave}
               />
             ))}
           </>
