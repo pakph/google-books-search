@@ -5,26 +5,30 @@ import DeleteBtn from "../DeleteBtn";
 
 function Card(props) {
   return (
-    <div className="card" id={props.key}>
+    <div className="card">
       <div className="card-body">
         <div className="row">
-          <h5 className="card-title booktitle">{props.title}</h5>
-          <ViewBtn />
-          <DeleteBtn />
-        </div>
-        <div className="row">
-          <p className="text-muted author">{props.author}</p>
-        </div>
-        <div className="row">
-          <div className="col-lg-2">
-            <img
-              className="card-img-top"
-              src="https://via.placeholder.com/128"
-              alt="Blank"
-            />
+          <div className="col">
+            <h5 className="card-title booktitle">{props.title}</h5>
+            <div className="float-right">
+              <ViewBtn />
+              <DeleteBtn />
+            </div>
           </div>
-          <div className="col-lg-10">
-            <p className="card-text">{props.description}</p>
+        </div>
+        <div className="row">
+          <div className="col">
+            <p className="text-muted author">{props.author}</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-2">
+            <img className="card-img-top" src={props.img} alt="Blank" />
+          </div>
+          <div className="col-10">
+            <div className="float-left">
+              <p className="card-text text-left">{props.description}</p>
+            </div>
           </div>
         </div>
       </div>

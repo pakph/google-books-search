@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../Card";
+import SavedCard from "../SavedCard";
 import API from "../../utils/API";
 import "./style.css";
 
@@ -23,11 +23,11 @@ function SavedContainer() {
         {books.length ? (
           <>
             {books.map((book) => (
-              <Card
+              <SavedCard
                 key={book._id}
                 title={book.title}
                 author={book.author}
-                description={book.description}
+                synopsis={book.synopsis}
               />
             ))}
           </>

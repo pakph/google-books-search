@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Search() {
+function Search(props) {
   return (
     <div className="jumbotronWrapper searchWrapper">
       <div className="jumbotron searchContainer">
@@ -10,6 +10,7 @@ function Search() {
           <div className="form-group">
             <label className="searchLabel" htmlFor="search"></label>
             <input
+              onChange={props.handleInputChange}
               name="search"
               type="text"
               className="form-control"
@@ -17,7 +18,12 @@ function Search() {
               id="search"
             />
             <br />
-            <button className="btn btn-primary searchBtn">Search</button>
+            <button
+              onClick={props.handleSearchSubmit}
+              className="btn btn-primary searchBtn"
+            >
+              Search
+            </button>
           </div>
         </form>
       </div>

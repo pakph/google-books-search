@@ -1,5 +1,7 @@
+.savedContainer {
+  padding: 1%;
+}
+
 .savedHeader {
-  position: relative;
-  left: -47.5%;
-  bottom: 50px;
+  float: left;
 }

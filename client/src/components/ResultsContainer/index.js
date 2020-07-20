@@ -1,14 +1,26 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "../Card";
-import "./style.css";
-import API from "../../utils/API";
 
-function ResultsContainer() {
+function ResultsContainer(props) {
   return (
     <div className="jumbotronWrapper">
       <div className="jumbotron resultsContainer">
         <p className="lead resultsHeader">Results</p>
-        <Card />
+        {props.data.length ? (
+          <>
+            {props.data.map((book) => (
+              <Card
+                key={book.id}
+                title={book.volumeInfo.title}
+                author={book.volumeInfo.authors[0]}
+                description={book.searchInfo.textSnippet}
+                img={book.volumeInfo.imageLinks.thumbnail}
+              />
+            ))}
+          </>
+        ) : (
+          <h3>No Results to Display</h3>
+        )}
       </div>
     </div>
   );

@@ -1,28 +1,25 @@
 .card {
   width: 100%;
-  height: 330px;
+  height: 380px;
 }
 
-.cardBtn {
-  position: relative;
-  left: 80%;
+.viewBtn {
   margin: 0px 3px;
 }
 
-.booktitle,
-.subtitle,
-.author {
+.booktitle {
   float: left;
-  margin-left: 15px;
-  margin-bottom: 3px;
 }
 
+.author {
+  float: left;
+}
 .card-img-top {
-  width: 192px;
+  width: 160px;
   float: left;
   margin-top: 3px;
 }
 
 .card-text {
-  float: left;
+  font-size: 14px;
 }
