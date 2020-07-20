@@ -11,7 +11,9 @@ function Card(props) {
           <div className="col">
             <h5 className="card-title booktitle">{props.title}</h5>
             <div className="float-right">
-              <ViewBtn />
+              <a href={props.href} rel="noopener noreferrer" target="_blank">
+                <ViewBtn />
+              </a>
               <DeleteBtn />
             </div>
           </div>

@@ -15,6 +15,7 @@ function ResultsContainer(props) {
                 author={book.volumeInfo.authors[0]}
                 description={book.searchInfo.textSnippet}
                 img={book.volumeInfo.imageLinks.thumbnail}
+                href={book.volumeInfo.previewLink}
               />
             ))}
           </>

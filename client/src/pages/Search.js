@@ -13,6 +13,7 @@ function Search() {
       imageLinks: {
         thumbnail: "",
       },
+      previewLink: "",
     },
     searchInfo: {
       textSnippet: "",
